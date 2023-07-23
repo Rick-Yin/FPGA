@@ -1,0 +1,206 @@
+$date
+	Sun Jul 23 16:57:04 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_carry_chain_4bit $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " cout $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % cin $end
+$scope module carry_chain_4bit $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % cin $end
+$var wire 5 ( temp [4:0] $end
+$var wire 4 ) sum [3:0] $end
+$var wire 1 " cout $end
+$scope begin loop_1bits[0] $end
+$var parameter 2 * i $end
+$scope module carry_chain_1bit $end
+$var wire 1 + a $end
+$var wire 1 , b $end
+$var wire 1 - cin $end
+$var wire 1 . cout $end
+$var wire 1 / sum $end
+$upscope $end
+$upscope $end
+$scope begin loop_1bits[1] $end
+$var parameter 2 0 i $end
+$scope module carry_chain_1bit $end
+$var wire 1 1 a $end
+$var wire 1 2 b $end
+$var wire 1 3 cin $end
+$var wire 1 4 cout $end
+$var wire 1 5 sum $end
+$upscope $end
+$upscope $end
+$scope begin loop_1bits[2] $end
+$var parameter 3 6 i $end
+$scope module carry_chain_1bit $end
+$var wire 1 7 a $end
+$var wire 1 8 b $end
+$var wire 1 9 cin $end
+$var wire 1 : cout $end
+$var wire 1 ; sum $end
+$upscope $end
+$upscope $end
+$scope begin loop_1bits[3] $end
+$var parameter 3 < i $end
+$scope module carry_chain_1bit $end
+$var wire 1 = a $end
+$var wire 1 > b $end
+$var wire 1 ? cin $end
+$var wire 1 @ cout $end
+$var wire 1 A sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 <
+b10 6
+b1 0
+b0 *
+$end
+#0
+$dumpvars
+xA
+x@
+x?
+x>
+x=
+x;
+x:
+x9
+x8
+x7
+x5
+x4
+x3
+x2
+x1
+x/
+x.
+x-
+x,
+x+
+bx )
+bx (
+bx '
+bx &
+x%
+bx $
+bx #
+x"
+bx !
+$end
+#5
+05
+0;
+0A
+03
+09
+0?
+0"
+0.
+04
+0:
+0@
+b0 !
+b0 )
+0/
+0-
+0,
+02
+08
+0>
+0+
+01
+07
+0=
+b0 (
+0%
+b0 $
+b0 '
+b0 #
+b0 &
+#10
+b10 !
+b10 )
+15
+13
+1.
+1-
+1+
+b11 (
+1%
+b1 #
+b1 &
+#15
+1;
+19
+14
+05
+b101 !
+b101 )
+1/
+0-
+1,
+0+
+11
+b110 (
+0%
+b1 $
+b1 '
+b10 #
+b10 &
+#20
+0A
+09
+0?
+03
+04
+0:
+0.
+05
+b101 !
+b101 )
+1;
+1-
+0,
+01
+17
+b1 (
+1%
+b0 $
+b0 '
+b100 #
+b100 &
+#25
+1"
+1@
+15
+0;
+b10 !
+b10 )
+0/
+0-
+12
+1>
+07
+1=
+b10000 (
+0%
+b1010 $
+b1010 '
+b1000 #
+b1000 &
+#30
