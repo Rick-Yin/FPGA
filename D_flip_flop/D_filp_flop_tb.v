@@ -4,13 +4,13 @@
 module D_filp_flop_tb;
 
     reg data_input;
-    reg hold_input;
+    reg clk;
     wire Q;
     wire Q_hat;
 
     D_filp_flop Dff_test(
         .data_input(data_input),
-        .hold_input(hold_input),
+        .clk(clk),
         .Q(Q),
         .Q_hat(Q_hat)
     );
@@ -21,13 +21,15 @@ module D_filp_flop_tb;
     end
 
     initial begin
+        clk = 0;
+        forever #5 clk = ~clk;
+    end
+
+    initial begin
         #5
         assign data_input = 0;
-        assign hold_input = 0;
         #5
         assign data_input = 1;
-        #5
-        assign hold_input = 1;
         #5
         assign data_input = 1;
         #5
@@ -35,6 +37,7 @@ module D_filp_flop_tb;
         #5
         assign data_input = 1;
         #5;
+        $finish;
     end
 
 endmodule
